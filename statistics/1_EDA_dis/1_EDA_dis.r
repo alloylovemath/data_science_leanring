@@ -117,7 +117,7 @@ moments::kurtosis(state$Population)
 
 # Distribution
 # there are so many dis. we just can't show them all
-# So, we use binomial dis. and poisson dis. to do the presentation
+# So, we use binomial dis., poisson dis. and normal dis. to do the presentation
 
 # 1. Binomial
 # (1) PMF -- x for success num.
