@@ -90,6 +90,10 @@ There is a trade-off between sensitivity and specificity. Considering a extrem c
 
 The ROC curve just show the trade-off. It plot sensitivity on the y-axis, specificity on the x-axis(more acurate, 1-specificity on the x-axis). If we plot a diagnal line in the plot, it means a test no better than random classification. A extremely effective diagnostic test will be at the upper-left corner.
 
+
+
+
+
 ***Be as brief as possible, but take down everything noteworthy***
 
 **Reference Book**:  
@@ -123,3 +127,27 @@ interaction of factors.
 
 With more than two factors, it is recommendable to use statistical modeling
 for the data analysis.
+
+
+## $\chi^{2}$ Test
+The definition of the test is different in Chen's book and book1, I will follow 
+the definition in Chen's book.
+
+The $\chi^{2}$ test is a kind of goodness of fit test. By definition, it tests
+whether the data of the sample shows it comes from some specific dis. 
+
+The idea is, in short, we calculate a $\chi^{2}$ statistic which shows the
+deviation between the real number in the data and the expect value.
+
+There are two basic cases here:  
+1. only one factor (but multiple levels or classes)
+2. contingency table(列联表)
+
+Math in different situations differ, but I won't cover it here. You can look
+them up in Chen's book(page 233-243)
+
+## Fisher’s Exact Test
+**Example: A Lady Tasting Tea(R.A.Fisher)**  
+I do believe the example above has significant meaning. However, book1 didn't
+show me that...(In my opinion)
+In book1, the idea is: $a+b=a+c=c+d=b+d$, so once one number is set, others automatically get known
