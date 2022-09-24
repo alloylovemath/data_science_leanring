@@ -202,3 +202,47 @@ df$observer <- as.factor(df$observer)
 # * for interaction
 a <- aov(hs ~ fetus * observer, data=df)
 summary(a)
+
+
+#==============================================================================#
+#==============================================================================#
+
+# <Chi-square test>
+
+# 1. one-way test
+
+# (1) case 1
+# > source: Chen's book
+# > by default, the expect situation is equally likely
+data_1 <- c(6, 3, 6)
+chisq.test(data_1)
+
+# (2) case 2
+# > source: book1
+data_2 <- c(10, 6, 5, 4, 5, 3)
+chisq.test(data_2)
+
+# 2. contingency table
+# create a contingency table
+data_3 <- data.frame(
+  one = c(63, 16),
+  two = c(37, 17),
+  Three = c(60, 8)
+)
+
+data_3 <- as.table(as.matrix(data_3))
+
+chisq.test(data_3)
+
+# <Fisher’s Exact Test>
+data_4 <- data.frame(
+  one = c(4, 0),
+  two = c(0, 4)
+)
+
+# library(tidyverse)
+data_4 <- data_4 %>%
+  as.matrix() %>%
+  as.table()
+
+fisher.test(data_4, alternative="greater")
