@@ -222,3 +222,40 @@ lm = ols(formula, df).fit()
 anovaResults = anova_lm(lm)
 
 anovaResults
+
+
+
+#==============================================================================#
+#==============================================================================#
+
+# <Chi-square test>
+
+# 1. one-way test
+
+# (1) case 1
+# > source: Chen's book
+# > by default, the expect situation is equally likely
+data = np.array([6, 3, 6])
+stats.chisquare(data)
+
+# (2) case 2
+# > source: book1
+data = np.array([10, 6, 5, 4, 5, 3])
+stats.chisquare(data)
+
+# 2. contingency table
+data = np.array([
+    [63, 37, 60],
+    [16, 17, 8],
+])
+
+Z, p, dof, expected = stats.chi2_contingency(data)
+print(p)
+
+# <Fisher’s Exact Test>
+data = np.array([
+    [4, 0],
+    [0, 4]
+])
+
+oddsratio, p = stats.fisher_exact(data, alternative='greater')
