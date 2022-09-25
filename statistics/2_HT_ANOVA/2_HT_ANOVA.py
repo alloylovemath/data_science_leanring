@@ -110,7 +110,6 @@ p # 0.09953843652790623 greater than 0.05, so we accept H0
 stats.ttest_1samp(scores, 110)
 
 # 2. Power
-from statsmodels.stats import power
 
 # > case on the book of mr.Chen
 from statsmodels.stats import power
