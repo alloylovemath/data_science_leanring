@@ -175,3 +175,54 @@ stats.poisson.rvs(size=5, mu=3)
 # (1) ISF -- quantile?
 my_norm_dis = stats.norm(0, 1)
 my_norm_dis.isf(0.025)
+
+#==============================================================================#
+
+# <functions>
+
+# 1. Normal
+norm_dis = stats.norm()
+# > loc -- mean, scale -- std
+norm_dis_1 = stats.norm(loc=2, scale=3)
+
+# (1) density
+norm_dis_1.pdf(5)
+
+# (2) CDF
+norm_dis_1.cdf(1)
+
+# (3) sf = 1 - CDF
+norm_dis_1.sf(1)
+
+# (4) ppf - inverse of CDF
+norm_dis.ppf(0.975)
+norm_dis_1.ppf(norm_dis_1.cdf(1))
+
+# (5) ISF - inverse of SF
+# > get the 1 - probability, use ppf to get the value
+norm_dis.isf(0.025)
+
+# (6) RVS
+norm_dis.rvs(10)
+
+# 2. t-dis.
+t_dis = stats.t(df=5)
+
+# (1) density
+t_dis.pdf(t_dis.ppf(0.95))
+
+# (2) CDF
+t_dis.cdf(t_dis.ppf(0.95))
+
+# (3) sf = 1 - CDF
+t_dis.sf(t_dis.ppf(0.95))
+
+# (4) ppf - inverse of CDF
+t_dis.ppf(0.95)
+
+# (5) ISF - inverse of SF
+# > get the 1 - probability, use ppf to get the value
+t_dis.isf(0.05)
+
+# (6) RVS
+t_dis.rvs(10)
