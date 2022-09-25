@@ -144,3 +144,48 @@ rpois(n=5, 10)
 # 3. Normal
 # (1) ISF
 qnorm(0.975, 0, 1)
+
+#==============================================================================#
+
+# <functions>
+# 1. Normal
+
+# (1) density
+dnorm(5 ,mean=5, sd=1)
+
+# (2) CDF
+pnorm(1, mean=2, sd=3)
+
+# (3) sf = 1 - CDF
+1 - pnorm(1, mean=2, sd=1)
+
+# (4) ppf - inverse of CDF
+qnorm(pnorm(1, mean=2, sd=3), mean=2, sd=3)
+
+# (5) ISF - inverse of SF
+# > get the 1 - probability, use ppf to get the value
+qnorm(1-0.95, mean=0, sd=1)
+
+# (6) RVS
+rnorm(5, mean=2, sd=3)
+
+# 2. t-dis.
+
+# (1) density
+dt(qt(0.95, 5), 5)
+
+# (2) CDF
+pt(qt(0.95, 5), 5)
+
+# (3) sf = 1 - CDF
+1 - pt(qt(0.95, 5), 5)
+
+# (4) ppf - inverse of CDF
+qt(0.95, 5)
+
+# (5) ISF - inverse of SF
+# > get the 1 - probability, use ppf to get the value
+qt(1-0.05, 5)
+
+# (6) RVS
+rt(5, 5)
