@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+'''
+This is my solution for the exercise of book1 in Chapter 6
+'''
+
 import numpy as np
 import scipy.stats as stats
 import matplotlib.pyplot as plt
