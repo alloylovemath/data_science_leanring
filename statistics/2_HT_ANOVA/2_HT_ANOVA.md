@@ -175,14 +175,11 @@ Thought:
 ther are of category $r_{1}$? ($x_{1, 1}\le r_{1}, x_{1, 1}\le c_{1}$) 
 
 Obviously, the prob. can be derived from the hypegeometric dis.  
-$$
-\textnormal{Pr}(x_{1, 1}=k) =
-\frac{{r_{1} \choose k}{N-r_{1} \choose c_{1} - k}}{N \choose c_{1}}
-$$
+$$\textnormal{Pr}(x_{1, 1}=k) =\frac{{r_{1} \choose k}{N-r_{1} \choose c_{1} - k}}{N \choose c_{1}}$$
 
 Now, suppose the thing we want to proof, ie. the alternative hypothesis is
 outcome tend to show up in (1, 1) less than randomlly selection, we shall 
-calculate $\sum_{i=0}^{k}\textnormal{Pr}(x_{1, 1}=i)$, that is the p-value
+calculate $\sum_{i=0}^{k}\textnormal{Pr}(x_{1, 1}=i)$ , that is the p-value
 
 ## McNemar’s Test
 I find a good explaination online that you can refer to: 
