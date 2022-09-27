@@ -38,7 +38,6 @@ weightedMedian(state$Murder.Rate, w=state$Population)
 # there are no built-in function for mode in R
 
 #==============================================================================#
-#==============================================================================#
 
 # <Estimation of Variability>
 
@@ -94,8 +93,6 @@ se(state$Population)
 install.packages("plotrix")
 plotrix::std.error(state$Population)
 
-
-#==============================================================================#
 #==============================================================================#
 
 # <Estimation of Shape>
@@ -115,49 +112,21 @@ moments::kurtosis(state$Population)
 #==============================================================================#
 #==============================================================================#
 
-# Distribution
+
+# <Distribution>
 # there are so many dis. we just can't show them all
-# So, we use binomial dis., poisson dis. and normal dis. to do the presentation
+# So, we use normal dis. and t dis. to do the presentation
 
-# 1. Binomial
-# (1) PMF -- x for success num.
-dbinom(x=2, size=5, p=0.1)
-
-# (2) CDF
-pbinom(2, 5, 0.1)
-
-# (3) generate random numbers from binomial dis.
-# > n -- the size you want
-# > the returned values are the nums of successes
-rbinom(n=10, size=100, p=0.1)
-
-# 2. Poisson
-# (1) PMF
-dpois(x=3, lambda=2)
-
-# (2) CDF
-ppois(6, 6)
-
-# (3) random variates
-rpois(n=5, 10)
-
-# 3. Normal
-# (1) ISF
-qnorm(0.975, 0, 1)
-
-#==============================================================================#
-
-# <functions>
 # 1. Normal
 
 # (1) density
-dnorm(5 ,mean=5, sd=1)
+dnorm(5 ,mean=2, sd=3)
 
 # (2) CDF
 pnorm(1, mean=2, sd=3)
 
 # (3) sf = 1 - CDF
-1 - pnorm(1, mean=2, sd=1)
+1 - pnorm(1, mean=2, sd=3)
 
 # (4) ppf - inverse of CDF
 qnorm(pnorm(1, mean=2, sd=3), mean=2, sd=3)
