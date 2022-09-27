@@ -54,7 +54,6 @@ wquantiles.median(state['Murder.Rate'], weights=state['Population'])
 stats.mode(state['Population'])
 
 #==============================================================================#
-#==============================================================================#
 
 # <Estimation of Variability>
 
@@ -124,7 +123,6 @@ se(state['Population'])
 stats.sem(state['Population'])
 
 #==============================================================================#
-#==============================================================================#
 
 # <Estimation of Shape>
 
@@ -145,40 +143,10 @@ stats.kurtosis(state['Population'], bias=False)
 #==============================================================================#
 #==============================================================================#
 
+
 # Distribution
 # there are so many dis. we just can't show them all
-# So, we use binomial dis., poisson dis. and normal dis. to do the presentation
-
-# 1. Binomial
-# (1) PMF -- x for success num.
-stats.binom.pmf(2, 5, 0.1)
-
-# (2) CDF
-stats.binom.cdf(2, 5, 0.1)
-
-# (3) generate random numbers from binomial dis.
-# > n -- the size you want
-# > the returned values are the nums of successes
-stats.binom.rvs(size=5, n=10, p=0.1)
-
-# 2. Poisson
-# (1) PMF
-stats.poisson.pmf(3, 2)
-
-# (2) CDF
-stats.poisson.cdf(6, 6)
-
-# (3) random variates
-stats.poisson.rvs(size=5, mu=3)
-
-# 3. Normal
-# (1) ISF -- quantile?
-my_norm_dis = stats.norm(0, 1)
-my_norm_dis.isf(0.025)
-
-#==============================================================================#
-
-# <functions>
+# So, we use normal dis. and t dis. to do the presentation
 
 # 1. Normal
 norm_dis = stats.norm()
