@@ -68,6 +68,7 @@ right_side_1 = (np.mean(weights) +
 np.array([left_side_1, right_side_1])
 
 # or stats just have the function
+# > notice that the scale is sem
 stats.t.interval(alpha=0.99, df=len(weights)-1,
                 loc=np.mean(weights), scale=stats.sem(weights))
 
@@ -83,6 +84,7 @@ fig = plt.figure(figsize=(8, 8))
 ax1 = fig.add_subplot(2, 1, 1)
 ax2 = fig.add_subplot(2, 1, 2)
 
+# > density = True -- frequency plot, False -- counts
 ax1.hist(chi2_sample, bins=100, density=True)
 
 chi2_dis = stats.chi2(df=3)
