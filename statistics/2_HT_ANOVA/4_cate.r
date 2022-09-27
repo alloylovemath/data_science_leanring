@@ -35,11 +35,11 @@ data_4 <- data.frame(
   two = c(11, 1)
 )
 
-r1 = sum(data_4[1, 1:2])
-r2 = sum(data_4[2, 1:2])
+r1 <- sum(data_4[1, 1:2])
+r2 <- sum(data_4[2, 1:2])
 
-c1 = sum(data_4[1:2, 1])
-c2 = sum(data_4[1:2, 2])
+c1 <- sum(data_4[1:2, 1])
+c2 <- sum(data_4[1:2, 2])
 
 # library(tidyverse)
 data_4 <- data_4 %>%
@@ -60,11 +60,11 @@ data_5 <- data.frame(
   two = c(1, 3)
 )
 
-r1 = sum(data_5[1, 1:2])
-r2 = sum(data_5[2, 1:2])
+r1 <- sum(data_5[1, 1:2])
+r2 <- sum(data_5[2, 1:2])
 
-c1 = sum(data_5[1:2, 1])
-c2 = sum(data_5[1:2, 2])
+c1 <- sum(data_5[1:2, 1])
+c2 <- sum(data_5[1:2, 2])
 
 # use 1 - cdf(sf) when alternative is larger
 # 2 not 3, because we want the prob. of 3 involved
