@@ -59,9 +59,9 @@ conditional probability:
 
 $$
 \begin{align*}
-\text{Pr}(t< X\le t + \Delta t| X \ge t) & =
+\text{Pr}(t< X \le t + \Delta t | X \ge t) & =
 \frac{\text{Pr}(t < X \le t + \Delta t, X \ge t)}{\text{Pr}(X \ge t)}\\
-&=\frac{\text{Pr}(t <X \le t + \Delta t)}{\text{Pr}(X \ge t)}\\
+&=\frac{\text{Pr}(t < X \le t + \Delta t)}{\text{Pr}(X \ge t)}\\
 &=\frac{F(t + \Delta t) - F(t)}{1-F(t)}
 \end{align*}
 $$
@@ -75,7 +75,10 @@ h(t) = \lambda & =
 &=\lim_{\Delta t \to 0}\frac{\frac{F(t + \Delta t) - F(t)}{1 - F(t)}}{\Delta t}\\
 &=\lim_{\Delta t \to 0}\frac{\frac{F(t + \Delta t) - F(t)}{\Delta t}}{1 - F(t)}\\
 &=\frac{F^{\prime}(t)}{1 - F(t)}
-\end{align*}\\
+\end{align*}
+$$
+
+$$
 \Rightarrow F^{\prime}(t)+ \lambda F(t) = \lambda
 $$
 
@@ -85,8 +88,10 @@ Solve this equation, we get $F(t)=1+Ce^{-\lambda t}$. Since $F(t)$ is CDF and
 $t>0$(time), we know that $F(0)=0$, so we get the specific solution:  
 
 $$
-F(t)=1-e^{-\lambda t}, \quad t>0,\\
+F(t)=1-e^{-\lambda t}, \quad (t>0)
+$$
 
+$$
 \Rightarrow F^{\prime}(t)=f(t)=
 \begin{cases}
 \lambda e^{-\lambda t}, & t>0;\\
@@ -107,8 +112,10 @@ $\lambda x^{m}(\lambda >0, m>0)$. As the time pass, the failure\death rate incre
 Similar process, we can get the CDF of Weibull distribution:  
 
 $$
-F(t)=1-\exp [-(\lambda / m+1) t^{m+1}].\\
+F(t)=1-\exp [-(\lambda / m+1) t^{m+1}].
+$$
 
+$$
 F^{\prime}(t)=f(t)=
 \begin{cases}
 \lambda t^{m} \exp [-(\lambda / m+1) t^{m+1}], & t>0;\\
