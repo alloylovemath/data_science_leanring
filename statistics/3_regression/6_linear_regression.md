@@ -145,8 +145,8 @@ metric below be:
 
 $$
 \frac{SS_{\text{res}}}{SS_{\text{tot}}} =
-\frac{ \sum_{i=1}^{n} {(y_{i} - \hat{y}_{i}) ^ {2}} }
-{ \sum_{i=1}^{n} {(y_{i} - \bar{y}) ^ {2}} }
+\frac{{\sum_{i=1}^{n}} (y_{i} - \hat{y}_{i}) ^ {2}}
+{{\sum_{i=1}^{n}} (y_{i} - \bar{y}) ^ {2}}
 $$
 
 The answer would be 0 becanse the numerator is 0. OK, then what this metric is
