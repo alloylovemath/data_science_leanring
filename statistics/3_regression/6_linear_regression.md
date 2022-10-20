@@ -47,6 +47,7 @@ them a lot.
 ## 3. General Linear Regression Model
 
 **model**:  
+
 $$
 y_{i} = \beta_{0} + \beta_{1} x_{i} + \varepsilon_{i}.
 $$
