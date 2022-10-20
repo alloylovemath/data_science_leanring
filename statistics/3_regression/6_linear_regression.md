@@ -47,7 +47,6 @@ them a lot.
 ## 3. General Linear Regression Model
 
 **model**:  
-
 $$
 y_{i} = \beta_{0} + \beta_{1} x_{i} + \varepsilon_{i}.
 $$
@@ -145,8 +144,8 @@ metric below be:
 
 $$
 \frac{SS_{\text{res}}}{SS_{\text{tot}}} =
-\frac{\sum_{i=1}^{n} (y_{i} - \hat{y}_{i})^{2}}
-{\sum_{i=1}^{n} (y_{i} - \bar{y})^{2}}
+\frac{ \sum_{i=1}^{n} {(y_{i} - \hat{y}_{i}) ^ {2}} }
+{ \sum_{i=1}^{n} {(y_{i} - \bar{y}) ^ {2}} }
 $$
 
 The answer would be 0 becanse the numerator is 0. OK, then what this metric is
@@ -216,8 +215,9 @@ testing(Prob (F-statistic) in the regression outcome comes from here).
 
 **Log-Likelihood**:  
 Usually, we apply the OLS method to do the regression. However there is another
-way -- MLE. The Log-Likelihood in the regression outcome shows the esitimator
-of the variance of the residuals, which is:  
+way -- MLE. The Log-Likelihood in the regression outcome shows value of the
+log likelihood function. And the esitimator of the variance of the residuals,
+is:  
 
 $$
 E(\sigma^{2}) = \frac{SS_{\text{res}}}{n}.
