@@ -16,7 +16,7 @@ you.
 Mankind is a brave species. We are always looking for furture exploration.
 However, we must admit that the road of adventure is not always smooth.
 
-On January 28, 1986, 7 brave astronaut lost their life when the space shuttle
+On January 28, 1986, 7 brave astronauts lost their life when the space shuttle
 *Challenger* exploded. We had to investigate the disaster for preventing future
 dangerous. In the end, the reason had been found -- O-ring seal failure in
 right SRB due to cold weather and wind shears.[(source:Wikipedia)](https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster)
