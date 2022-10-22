@@ -27,7 +27,7 @@ linear regression between $Y$ and temperature(and other covariates if
 needed). OLS will give us a model, and we can use it to do the analysis. But
 , if we draw the data and the fitted line, we will get something like this:  
 
-![linear outcome](/data/linear_bad_outcome.png)
+![linear outcome](data/linear_bad_outcome.png)
 
 OK, fom the red line, we can interpret that o-rings are more likely to fail
 with cold temperature. But, do you really think that this is a good model,
